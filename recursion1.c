@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int fact (int);
+int fact(int n){
+
+    // base condition 
+
+    if(n==1){
+        return 1;
+
+    }else{
+        // recursive relation 
+        return n * fact(n-1);
+        // 4 * fact(3)
+    }
+}
+
+void main(){
+
+    int n = 5;
+    int res = fact(n);
+    printf("The factorial of %d is %d\n",n,res);
+
+}
